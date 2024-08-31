@@ -16,10 +16,10 @@ function App() {
  return (
   <Router>
    <div className="flex gap-10 p-5 ">
-    <div className="md:w-[180px] mt-4">
+    <div className="w-[180px] mt-4">
      <Sidebar />
     </div>
-    <div className="w-[calc(100vw-180px)]">
+    <div className="w-full">
      <Routes>
       <Route path="/" element={<Dashboard />} />
       <Route path="/inventory" element={<Inventory />} />

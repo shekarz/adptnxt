@@ -9,7 +9,7 @@ const Dashboard = () => {
      Dashboard
     </span>
    </div>
-   <div className="p-7 flex flex-col lg:flex-row h-full bg-neutral-200 md:p-3 gap-4">
+   <div className="p-7 flex flex-col md:flex-row h-full bg-neutral-200 md:p-3 gap-4">
     <div className="md:basis-2/3 w-full bg-white rounded-md h-full p-4">
      <LinechartComponent />
     </div>
