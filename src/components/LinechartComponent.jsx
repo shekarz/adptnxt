@@ -61,12 +61,12 @@ const LinechartComponent = () => {
  };
  return (
   <>
-   <div className="mb-10 font-semibold">
+   <div className="mb-1 md:mb-10 font-semibold">
     Sales vs Orders <AiOutlineInfoCircle size={20} className="inline-block" />
    </div>
    <LineChart
-    width={window.innerWidth > 768 ? 800 : 400}
-    height={window.innerWidth > 768 ? 400 : 250}
+    width={window.innerWidth > 768 ? 800 : window.innerWidth > 400 ? 380 : 350}
+    height={window.innerWidth > 768 ? 380 : window.innerWidth > 400 ? 320 : 300}
     data={data}
     margin={{
      top: 5,
