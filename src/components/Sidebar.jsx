@@ -29,12 +29,12 @@ const Sidebar = () => {
    >
     <AiOutlineMenu color="gray" size={24} />
    </div>
-   {/* <div
+   <div
     className={`fixed inset-0 z-40 bg-black bg-opacity-50 transition-opacity lg:hidden ${
      isSidebarOpen ? "opacity-100" : "opacity-0 pointer-events-none"
     }`}
     onClick={toggleSidebar}
-   ></div> */}
+   ></div>
    <ul className="hidden md:flex flex-col gap-2">
     {menuItems.map((item) => (
      <Link
